@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 使用AndroidAutoLayout进行卡片适配 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="false"
+              android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_margin"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginRight="@dimen/right_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:focusable="false"
+        card_view:cardElevation="@dimen/card_elevation">
+
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/post"
+                android:layout_width="200dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                card_view:srcCompat="@mipmap/stonement" />
+
+            <TextView
+                android:id="@+id/movname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20sp"
+                android:gravity="center"
+                android:text="赎罪"
+                android:textSize="20sp" />
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/heartsmall"
+                    android:text="想看" />
+
+                <Button
+                    android:id="@+id/bun_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/starsmall"
+                    android:text="已看" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- <TextView
+             android:id="@+id/card_num_tv"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:textColor="@color/text_color"
+             android:textSize="@dimen/text_font_size_big_60sp"
+             android:textStyle="bold" />-->
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

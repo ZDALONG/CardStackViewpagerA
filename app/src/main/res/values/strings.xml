@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CardStackViewpager</string>
+    <string name="my_name">Nate Robinson</string>
+    <string name="my_qq">840501291</string>
+    <string name="my_github">https://github.com/NateRobinson</string>
+    <string name="my_blog">http://blog.csdn.net/u011771755</string>
+    <string name="my_signature">Never give up~</string>
+    <string name="setting_menu">menu</string>
+    <string name="button_login">登陆</string>
+    <string name="button_enroll">注册</string>
+    <string name="button_want">我想看的</string>
+    <string name="button_watched">我看过的</string>
+    <string name="button_like">我攒过的</string>
+    <string name="button_mylist">我的影单</string>
+    <string name="button_mydown">我的缓存</string>
+    <string name="button_setting">设置</string>
+    <string name="name">Movie</string>
+</resources>

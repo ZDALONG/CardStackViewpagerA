@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".activity.MoviePageActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/post"
+            android:layout_width="167dp"
+            android:layout_height="170dp"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="191dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="90dp"
+
+                android:text="@string/name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:text="上映日期：2008-02-22(中国大陆) / 2007-09-07(英国)" />
+
+            <TextView
+                android:id="@+id/grade"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:text="8.3分" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="15sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/want"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green_dark"
+            android:drawableLeft="@drawable/heartsmall"
+            android:text="想看"
+            android:textSize="14sp" />
+        <TextView
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp" />
+        <Button
+            android:id="@+id/watched"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/green_dark"
+            android:drawableLeft="@drawable/starsmall"
+            android:text="看过"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/web_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1935年夏天，来自一个宽裕的英国小康家庭的13岁的少女布里奥妮（斯奥里兹•罗南 饰）刚刚开始尝试写作,想象力丰富。一天，她暗中发现仆人的儿子——罗比•特纳（詹姆斯•迈克沃伊 饰）和她姐姐塞西利亚（凯特•奈特莉 饰）之间有暧昧关系，而且发现他给她写了一封充满情色意味的情书。布里奥妮丰富的想象力虚构着各种可怕的事情，浮想联翩。当她的表姐罗拉被强奸后，布里奥妮相当肯定她看到是罗比做的，这次指证使罗比蒙冤入狱，留下伤心欲绝的塞西利亚。第二次世界大战爆发了，出狱后的罗比和塞西利亚都投入了保卫祖国的战斗，布利奥妮放弃到剑桥升学成为一名军队医务人员。没有人能理解她的做法，只有她知道她怀揣着巨大的秘密和自责。她鼓起勇气，想把这秘密解开，能真正赎罪和得到宽恕。然而，世事幻变，出乎布利奥妮的预算。" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
